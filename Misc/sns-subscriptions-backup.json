@@ -1,0 +1,36 @@
+[
+  {
+    "SubscriptionArn": "arn:aws:sns:us-east-1:842676019507:customers:f45a72d3-5540-4f09-9e39-c8a4a6b3f316",
+    "TopicArn": "arn:aws:sns:us-east-1:842676019507:customers",
+    "Protocol": "sqs",
+    "Endpoint": "arn:aws:sqs:us-east-1:842676019507:customers",
+    "Attributes": {
+      "SubscriptionPrincipal": "arn:aws:iam::842676019507:root",
+      "Owner": "842676019507",
+      "RawMessageDelivery": "true",
+      "TopicArn": "arn:aws:sns:us-east-1:842676019507:customers",
+      "Endpoint": "arn:aws:sqs:us-east-1:842676019507:customers",
+      "Protocol": "sqs",
+      "PendingConfirmation": "false",
+      "ConfirmationWasAuthenticated": "true",
+      "SubscriptionArn": "arn:aws:sns:us-east-1:842676019507:customers:f45a72d3-5540-4f09-9e39-c8a4a6b3f316"
+    }
+  },
+  {
+    "SubscriptionArn": "arn:aws:sns:us-east-1:842676019507:customers:0b8e4ffe-23bc-442d-bff1-b405cf259bd0",
+    "TopicArn": "arn:aws:sns:us-east-1:842676019507:customers",
+    "Protocol": "sqs",
+    "Endpoint": "arn:aws:sqs:us-east-1:842676019507:customers2",
+    "Attributes": {
+      "SubscriptionPrincipal": "arn:aws:iam::842676019507:root",
+      "Owner": "842676019507",
+      "RawMessageDelivery": "true",
+      "TopicArn": "arn:aws:sns:us-east-1:842676019507:customers",
+      "Endpoint": "arn:aws:sqs:us-east-1:842676019507:customers2",
+      "Protocol": "sqs",
+      "PendingConfirmation": "false",
+      "ConfirmationWasAuthenticated": "true",
+      "SubscriptionArn": "arn:aws:sns:us-east-1:842676019507:customers:0b8e4ffe-23bc-442d-bff1-b405cf259bd0"
+    }
+  }
+]

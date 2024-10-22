@@ -1,0 +1,16 @@
+[
+  {
+    "TopicArn": "arn:aws:sns:us-east-1:842676019507:customers",
+    "Attributes": {
+      "Policy": "{\u0022Version\u0022:\u00222008-10-17\u0022,\u0022Id\u0022:\u0022__default_policy_ID\u0022,\u0022Statement\u0022:[{\u0022Sid\u0022:\u0022__default_statement_ID\u0022,\u0022Effect\u0022:\u0022Allow\u0022,\u0022Principal\u0022:{\u0022AWS\u0022:\u0022*\u0022},\u0022Action\u0022:[\u0022SNS:GetTopicAttributes\u0022,\u0022SNS:SetTopicAttributes\u0022,\u0022SNS:AddPermission\u0022,\u0022SNS:RemovePermission\u0022,\u0022SNS:DeleteTopic\u0022,\u0022SNS:Subscribe\u0022,\u0022SNS:ListSubscriptionsByTopic\u0022,\u0022SNS:Publish\u0022],\u0022Resource\u0022:\u0022arn:aws:sns:us-east-1:842676019507:customers\u0022,\u0022Condition\u0022:{\u0022StringEquals\u0022:{\u0022AWS:SourceOwner\u0022:\u0022842676019507\u0022}}}]}",
+      "Owner": "842676019507",
+      "SubscriptionsPending": "0",
+      "TopicArn": "arn:aws:sns:us-east-1:842676019507:customers",
+      "TracingConfig": "PassThrough",
+      "EffectiveDeliveryPolicy": "{\u0022http\u0022:{\u0022defaultHealthyRetryPolicy\u0022:{\u0022minDelayTarget\u0022:20,\u0022maxDelayTarget\u0022:20,\u0022numRetries\u0022:3,\u0022numMaxDelayRetries\u0022:0,\u0022numNoDelayRetries\u0022:0,\u0022numMinDelayRetries\u0022:0,\u0022backoffFunction\u0022:\u0022linear\u0022},\u0022disableSubscriptionOverrides\u0022:false,\u0022defaultRequestPolicy\u0022:{\u0022headerContentType\u0022:\u0022text/plain; charset=UTF-8\u0022}}}",
+      "SubscriptionsConfirmed": "2",
+      "DisplayName": null,
+      "SubscriptionsDeleted": "0"
+    }
+  }
+]

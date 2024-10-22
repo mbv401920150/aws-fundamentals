@@ -1,0 +1,3 @@
+# Packages
+- AWZSDK.SQS
+
