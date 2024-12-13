@@ -1,8 +1,8 @@
 namespace Customers.Api.Messaging;
 
-public class QueueSettings
+public class TopicSettings
 {
-    public const string Key = "Queue";
+    public const string Key = "Topic";
     
     public required string Name { get; set; }
 }

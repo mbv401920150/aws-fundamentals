@@ -1,10 +1,7 @@
-using Amazon.SimpleNotificationService;
-using Customers.Api.Database;
-using Customers.Api.Messaging;
+using Amazon.DynamoDBv2;
 using Customers.Api.Repositories;
 using Customers.Api.Services;
 using Customers.Api.Validation;
-using Dapper;
 using FluentValidation.AspNetCore;
 using Microsoft.Net.Http.Headers;
 
@@ -25,22 +22,10 @@ builder.Services.AddControllers().AddFluentValidation(x =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-SqlMapper.AddTypeHandler(new GuidTypeHandler());
-SqlMapper.RemoveTypeMap(typeof(Guid));
-SqlMapper.RemoveTypeMap(typeof(Guid?));
-
-builder.Services.AddSingleton<IDbConnectionFactory>(_ =>
-    new SqliteConnectionFactory(config.GetValue<string>("Database:ConnectionString")!));
-
-builder.Services.Configure<TopicSettings>(builder.Configuration.GetSection(TopicSettings.Key));
-
-builder.Services.AddSingleton<IAmazonSimpleNotificationService, AmazonSimpleNotificationServiceClient>();
-builder.Services.AddSingleton<ISnsMessenger, SnsMessenger>();
-
-builder.Services.AddSingleton<DatabaseInitializer>();
 builder.Services.AddSingleton<ICustomerRepository, CustomerRepository>();
 builder.Services.AddSingleton<ICustomerService, CustomerService>();
 builder.Services.AddSingleton<IGitHubService, GitHubService>();
+builder.Services.AddSingleton<IAmazonDynamoDB, AmazonDynamoDBClient>();
 
 builder.Services.AddHttpClient("GitHub", httpClient =>
 {
@@ -63,8 +48,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.UseMiddleware<ValidationExceptionMiddleware>();
 app.MapControllers();
-
-var databaseInitializer = app.Services.GetRequiredService<DatabaseInitializer>();
-await databaseInitializer.InitializeAsync();
 
 app.Run();
