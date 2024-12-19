@@ -1,0 +1,44 @@
+[
+  {
+    "BucketName": "bucket.lambda.mibol",
+    "CreationDate": "2024-12-16T19:39:21+00:00",
+    "Location": {
+      "Location": {
+        "Value": ""
+      },
+      "ResponseMetadata": {
+        "RequestId": "6PXV9J15HJTA7AEB",
+        "Metadata": {
+          "x-amz-id-2": "JDVogBJ5vA2RqGyDa/qbPmpEtCKPBEyBEYNykQnEQn1PDcd8M\u002BpNEzyHupS\u002B8\u002BKXRphrlRLLHgA="
+        },
+        "ChecksumAlgorithm": 0,
+        "ChecksumValidationStatus": 0
+      },
+      "ContentLength": 0,
+      "HttpStatusCode": 200
+    },
+    "VersioningStatus": "Amazon.S3.Model.GetBucketVersioningResponse",
+    "Policy": null
+  },
+  {
+    "BucketName": "mibol-cloud",
+    "CreationDate": "2024-12-12T22:33:02+00:00",
+    "Location": {
+      "Location": {
+        "Value": ""
+      },
+      "ResponseMetadata": {
+        "RequestId": "YPR0GZV0R8X8M6CE",
+        "Metadata": {
+          "x-amz-id-2": "nweHVNXlZE8WhmLLFmLDiM37HK22/AkyLbg8LZPUN1UzdMn8ywTpDKRHNccJf0thjlHz9FyodnY="
+        },
+        "ChecksumAlgorithm": 0,
+        "ChecksumValidationStatus": 0
+      },
+      "ContentLength": 0,
+      "HttpStatusCode": 200
+    },
+    "VersioningStatus": "Amazon.S3.Model.GetBucketVersioningResponse",
+    "Policy": null
+  }
+]

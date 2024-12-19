@@ -1,0 +1,162 @@
+[
+  {
+    "FunctionName": "SimpleS3Lambda",
+    "FunctionArn": "arn:aws:lambda:us-east-1:842676019507:function:SimpleS3Lambda",
+    "Runtime": {
+      "Value": "dotnet8"
+    },
+    "LastModified": "2024-12-18T22:59:42.000\u002B0000",
+    "Handler": "SimpleS3Lambda::SimpleS3Lambda.Function::FunctionHandler",
+    "MemorySize": 512,
+    "Timeout": 30,
+    "Role": "arn:aws:iam::842676019507:role/service-role/SimpleLambda-role-xoo8few0",
+    "EnvironmentVariables": null,
+    "DeadLetterConfig": null,
+    "TracingConfig": {
+      "Mode": {
+        "Value": "PassThrough"
+      }
+    },
+    "VpcConfig": null
+  },
+  {
+    "FunctionName": "SimpleApiLambda",
+    "FunctionArn": "arn:aws:lambda:us-east-1:842676019507:function:SimpleApiLambda",
+    "Runtime": {
+      "Value": "dotnet8"
+    },
+    "LastModified": "2024-12-19T00:02:36.024\u002B0000",
+    "Handler": "SimpleApiLambda",
+    "MemorySize": 512,
+    "Timeout": 30,
+    "Role": "arn:aws:iam::842676019507:role/service-role/SimpleLambda-role-xoo8few0",
+    "EnvironmentVariables": null,
+    "DeadLetterConfig": null,
+    "TracingConfig": {
+      "Mode": {
+        "Value": "PassThrough"
+      }
+    },
+    "VpcConfig": null
+  },
+  {
+    "FunctionName": "SimpleLambda",
+    "FunctionArn": "arn:aws:lambda:us-east-1:842676019507:function:SimpleLambda",
+    "Runtime": {
+      "Value": "dotnet8"
+    },
+    "LastModified": "2024-12-14T17:22:26.000\u002B0000",
+    "Handler": "SimpleLambda::SimpleLambda.Function::FunctionHandler",
+    "MemorySize": 512,
+    "Timeout": 30,
+    "Role": "arn:aws:iam::842676019507:role/service-role/SimpleLambda-role-xoo8few0",
+    "EnvironmentVariables": null,
+    "DeadLetterConfig": null,
+    "TracingConfig": {
+      "Mode": {
+        "Value": "PassThrough"
+      }
+    },
+    "VpcConfig": null
+  },
+  {
+    "FunctionName": "SimpleCustomLambda",
+    "FunctionArn": "arn:aws:lambda:us-east-1:842676019507:function:SimpleCustomLambda",
+    "Runtime": {
+      "Value": "provided.al2023"
+    },
+    "LastModified": "2024-12-19T00:19:05.499\u002B0000",
+    "Handler": "bootstrap",
+    "MemorySize": 512,
+    "Timeout": 30,
+    "Role": "arn:aws:iam::842676019507:role/service-role/SimpleLambda-role-xoo8few0",
+    "EnvironmentVariables": null,
+    "DeadLetterConfig": null,
+    "TracingConfig": {
+      "Mode": {
+        "Value": "PassThrough"
+      }
+    },
+    "VpcConfig": null
+  },
+  {
+    "FunctionName": "SimpleHttpLambda",
+    "FunctionArn": "arn:aws:lambda:us-east-1:842676019507:function:SimpleHttpLambda",
+    "Runtime": {
+      "Value": "dotnet8"
+    },
+    "LastModified": "2024-12-16T21:14:34.000\u002B0000",
+    "Handler": "SimpleHttpLambda::SimpleHttpLambda.Functions_Get_Generated::Get",
+    "MemorySize": 512,
+    "Timeout": 30,
+    "Role": "arn:aws:iam::842676019507:role/service-role/SimpleLambda-role-xoo8few0",
+    "EnvironmentVariables": null,
+    "DeadLetterConfig": null,
+    "TracingConfig": {
+      "Mode": {
+        "Value": "PassThrough"
+      }
+    },
+    "VpcConfig": null
+  },
+  {
+    "FunctionName": "SimpleSnsLambda",
+    "FunctionArn": "arn:aws:lambda:us-east-1:842676019507:function:SimpleSnsLambda",
+    "Runtime": {
+      "Value": "dotnet8"
+    },
+    "LastModified": "2024-12-18T21:14:13.930\u002B0000",
+    "Handler": "SimpleSnsLambda::SimpleSnsLambda.Function::FunctionHandler",
+    "MemorySize": 512,
+    "Timeout": 30,
+    "Role": "arn:aws:iam::842676019507:role/service-role/SimpleLambda-role-xoo8few0",
+    "EnvironmentVariables": null,
+    "DeadLetterConfig": null,
+    "TracingConfig": {
+      "Mode": {
+        "Value": "PassThrough"
+      }
+    },
+    "VpcConfig": null
+  },
+  {
+    "FunctionName": "SimpleSqsLambda",
+    "FunctionArn": "arn:aws:lambda:us-east-1:842676019507:function:SimpleSqsLambda",
+    "Runtime": {
+      "Value": "dotnet8"
+    },
+    "LastModified": "2024-12-18T20:30:14.427\u002B0000",
+    "Handler": "SimpleSqsLambda::SimpleSqsLambda.Function::FunctionHandler",
+    "MemorySize": 512,
+    "Timeout": 30,
+    "Role": "arn:aws:iam::842676019507:role/service-role/SimpleLambda-role-xoo8few0",
+    "EnvironmentVariables": null,
+    "DeadLetterConfig": null,
+    "TracingConfig": {
+      "Mode": {
+        "Value": "PassThrough"
+      }
+    },
+    "VpcConfig": null
+  },
+  {
+    "FunctionName": "SimpleDynamoLambda",
+    "FunctionArn": "arn:aws:lambda:us-east-1:842676019507:function:SimpleDynamoLambda",
+    "Runtime": {
+      "Value": "dotnet8"
+    },
+    "LastModified": "2024-12-18T21:52:27.964\u002B0000",
+    "Handler": "SimpleDynamoDbLambda::SimpleDynamoDbLambda.Function::FunctionHandler",
+    "MemorySize": 512,
+    "Timeout": 30,
+    "Role": "arn:aws:iam::842676019507:role/service-role/SimpleLambda-role-xoo8few0",
+    "EnvironmentVariables": null,
+    "DeadLetterConfig": null,
+    "TracingConfig": {
+      "Mode": {
+        "Value": "PassThrough"
+      }
+    },
+    "VpcConfig": null
+  }
+]
