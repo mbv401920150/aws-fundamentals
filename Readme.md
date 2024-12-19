@@ -3,6 +3,8 @@
 Additional information in on the Notion page.
 
 # Notion Topics
+In the following link there is a full documentation of the topics cover in this solution:
+https://www.notion.so/mibol/Fundamentals-1043d44b1a3f80798927d616e499c5b6?pvs=4
 
 - Install AWS CLI
 - Basic concepts about each resource group.
@@ -24,4 +26,4 @@ Also take a look of the policies.
 - Check the account number.
 
 **Example**: `arn:aws:sns:us-east-1:842676019507:customers` the account number `842676019507` correspond to each user
-account. The region also is account related `us-east-1`.  
+account. The region also is account related `us-east-1`.
