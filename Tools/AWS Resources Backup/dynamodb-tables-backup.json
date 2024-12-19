@@ -1,0 +1,143 @@
+[
+  {
+    "TableName": "customers",
+    "TableArn": "arn:aws:dynamodb:us-east-1:842676019507:table/customers",
+    "ItemCount": 8,
+    "ProvisionedThroughput": {
+      "LastDecreaseDateTime": "2024-11-11T10:56:17.1070001Z",
+      "LastIncreaseDateTime": "0001-01-01T00:00:00",
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 1,
+      "WriteCapacityUnits": 1
+    },
+    "CreationDateTime": "2024-11-11T10:41:28.664Z",
+    "TableStatus": {
+      "Value": "ACTIVE"
+    },
+    "KeySchema": [
+      {
+        "AttributeName": "pk",
+        "KeyType": {
+          "Value": "HASH"
+        }
+      },
+      {
+        "AttributeName": "sk",
+        "KeyType": {
+          "Value": "RANGE"
+        }
+      }
+    ],
+    "GlobalSecondaryIndexes": [
+      {
+        "Backfilling": false,
+        "IndexArn": "arn:aws:dynamodb:us-east-1:842676019507:table/customers/index/email-id-index",
+        "IndexName": "email-id-index",
+        "IndexSizeBytes": 1981,
+        "IndexStatus": {
+          "Value": "ACTIVE"
+        },
+        "ItemCount": 8,
+        "KeySchema": [
+          {
+            "AttributeName": "Email",
+            "KeyType": {
+              "Value": "HASH"
+            }
+          },
+          {
+            "AttributeName": "Id",
+            "KeyType": {
+              "Value": "RANGE"
+            }
+          }
+        ],
+        "OnDemandThroughput": null,
+        "Projection": {
+          "NonKeyAttributes": [],
+          "ProjectionType": {
+            "Value": "ALL"
+          }
+        },
+        "ProvisionedThroughput": {
+          "LastDecreaseDateTime": "0001-01-01T00:00:00",
+          "LastIncreaseDateTime": "0001-01-01T00:00:00",
+          "NumberOfDecreasesToday": 0,
+          "ReadCapacityUnits": 1,
+          "WriteCapacityUnits": 1
+        }
+      }
+    ],
+    "LocalSecondaryIndexes": [],
+    "BillingModeSummary": null,
+    "SSEDescription": null
+  },
+  {
+    "TableName": "movies_title_year",
+    "TableArn": "arn:aws:dynamodb:us-east-1:842676019507:table/movies_title_year",
+    "ItemCount": 35,
+    "ProvisionedThroughput": {
+      "LastDecreaseDateTime": "2024-11-11T14:31:30.3110001Z",
+      "LastIncreaseDateTime": "0001-01-01T00:00:00",
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 1,
+      "WriteCapacityUnits": 1
+    },
+    "CreationDateTime": "2024-11-11T14:18:48.3039999Z",
+    "TableStatus": {
+      "Value": "ACTIVE"
+    },
+    "KeySchema": [
+      {
+        "AttributeName": "pk",
+        "KeyType": {
+          "Value": "HASH"
+        }
+      },
+      {
+        "AttributeName": "sk",
+        "KeyType": {
+          "Value": "RANGE"
+        }
+      }
+    ],
+    "GlobalSecondaryIndexes": [],
+    "LocalSecondaryIndexes": [],
+    "BillingModeSummary": null,
+    "SSEDescription": null
+  },
+  {
+    "TableName": "movies_year_title",
+    "TableArn": "arn:aws:dynamodb:us-east-1:842676019507:table/movies_year_title",
+    "ItemCount": 35,
+    "ProvisionedThroughput": {
+      "LastDecreaseDateTime": "2024-11-11T14:31:41.1530001Z",
+      "LastIncreaseDateTime": "0001-01-01T00:00:00",
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 1,
+      "WriteCapacityUnits": 1
+    },
+    "CreationDateTime": "2024-11-11T14:19:27.055Z",
+    "TableStatus": {
+      "Value": "ACTIVE"
+    },
+    "KeySchema": [
+      {
+        "AttributeName": "pk",
+        "KeyType": {
+          "Value": "HASH"
+        }
+      },
+      {
+        "AttributeName": "sk",
+        "KeyType": {
+          "Value": "RANGE"
+        }
+      }
+    ],
+    "GlobalSecondaryIndexes": [],
+    "LocalSecondaryIndexes": [],
+    "BillingModeSummary": null,
+    "SSEDescription": null
+  }
+]

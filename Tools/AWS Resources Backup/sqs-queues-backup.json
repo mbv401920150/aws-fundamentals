@@ -1,0 +1,58 @@
+[
+  {
+    "QueueUrl": "https://sqs.us-east-1.amazonaws.com/842676019507/customers",
+    "Attributes": {
+      "QueueArn": "arn:aws:sqs:us-east-1:842676019507:customers",
+      "ApproximateNumberOfMessages": "0",
+      "ApproximateNumberOfMessagesNotVisible": "0",
+      "ApproximateNumberOfMessagesDelayed": "0",
+      "CreatedTimestamp": "1726675523",
+      "LastModifiedTimestamp": "1729696355",
+      "VisibilityTimeout": "30",
+      "MaximumMessageSize": "262144",
+      "MessageRetentionPeriod": "345600",
+      "DelaySeconds": "0",
+      "Policy": "{\u0022Version\u0022:\u00222012-10-17\u0022,\u0022Id\u0022:\u0022__default_policy_ID\u0022,\u0022Statement\u0022:[{\u0022Sid\u0022:\u0022__owner_statement\u0022,\u0022Effect\u0022:\u0022Allow\u0022,\u0022Principal\u0022:{\u0022AWS\u0022:\u0022arn:aws:iam::842676019507:root\u0022},\u0022Action\u0022:\u0022SQS:*\u0022,\u0022Resource\u0022:\u0022arn:aws:sqs:us-east-1:842676019507:customers\u0022},{\u0022Effect\u0022:\u0022Allow\u0022,\u0022Principal\u0022:{\u0022Service\u0022:\u0022sns.amazonaws.com\u0022},\u0022Action\u0022:\u0022sqs:SendMessage\u0022,\u0022Resource\u0022:\u0022arn:aws:sqs:us-east-1:842676019507:customers\u0022,\u0022Condition\u0022:{\u0022ArnEquals\u0022:{\u0022aws:SourceArn\u0022:\u0022arn:aws:sns:us-east-1:842676019507:customers\u0022}}}]}",
+      "RedrivePolicy": "{\u0022deadLetterTargetArn\u0022:\u0022arn:aws:sqs:us-east-1:842676019507:customers-dlq\u0022,\u0022maxReceiveCount\u0022:3}",
+      "ReceiveMessageWaitTimeSeconds": "0",
+      "SqsManagedSseEnabled": "true"
+    }
+  },
+  {
+    "QueueUrl": "https://sqs.us-east-1.amazonaws.com/842676019507/customers-dlq",
+    "Attributes": {
+      "QueueArn": "arn:aws:sqs:us-east-1:842676019507:customers-dlq",
+      "ApproximateNumberOfMessages": "0",
+      "ApproximateNumberOfMessagesNotVisible": "0",
+      "ApproximateNumberOfMessagesDelayed": "0",
+      "CreatedTimestamp": "1729591750",
+      "LastModifiedTimestamp": "1729696367",
+      "VisibilityTimeout": "30",
+      "MaximumMessageSize": "262144",
+      "MessageRetentionPeriod": "1209600",
+      "DelaySeconds": "0",
+      "Policy": "{\u0022Version\u0022:\u00222012-10-17\u0022,\u0022Id\u0022:\u0022__default_policy_ID\u0022,\u0022Statement\u0022:[{\u0022Sid\u0022:\u0022__owner_statement\u0022,\u0022Effect\u0022:\u0022Allow\u0022,\u0022Principal\u0022:{\u0022AWS\u0022:\u0022arn:aws:iam::842676019507:root\u0022},\u0022Action\u0022:\u0022SQS:*\u0022,\u0022Resource\u0022:\u0022arn:aws:sqs:us-east-1:842676019507:customers-dlq\u0022}]}",
+      "RedriveAllowPolicy": "{\u0022redrivePermission\u0022:\u0022byQueue\u0022,\u0022sourceQueueArns\u0022:[\u0022arn:aws:sqs:us-east-1:842676019507:customers\u0022]}",
+      "ReceiveMessageWaitTimeSeconds": "0",
+      "SqsManagedSseEnabled": "true"
+    }
+  },
+  {
+    "QueueUrl": "https://sqs.us-east-1.amazonaws.com/842676019507/customers2",
+    "Attributes": {
+      "QueueArn": "arn:aws:sqs:us-east-1:842676019507:customers2",
+      "ApproximateNumberOfMessages": "0",
+      "ApproximateNumberOfMessagesNotVisible": "0",
+      "ApproximateNumberOfMessagesDelayed": "0",
+      "CreatedTimestamp": "1729633134",
+      "LastModifiedTimestamp": "1729696375",
+      "VisibilityTimeout": "30",
+      "MaximumMessageSize": "262144",
+      "MessageRetentionPeriod": "345600",
+      "DelaySeconds": "0",
+      "Policy": "{\u0022Version\u0022:\u00222012-10-17\u0022,\u0022Id\u0022:\u0022__default_policy_ID\u0022,\u0022Statement\u0022:[{\u0022Sid\u0022:\u0022__owner_statement\u0022,\u0022Effect\u0022:\u0022Allow\u0022,\u0022Principal\u0022:{\u0022AWS\u0022:\u0022arn:aws:iam::842676019507:root\u0022},\u0022Action\u0022:\u0022SQS:*\u0022,\u0022Resource\u0022:\u0022arn:aws:sqs:us-east-1:842676019507:customers2\u0022},{\u0022Effect\u0022:\u0022Allow\u0022,\u0022Principal\u0022:{\u0022Service\u0022:\u0022sns.amazonaws.com\u0022},\u0022Action\u0022:\u0022sqs:SendMessage\u0022,\u0022Resource\u0022:\u0022arn:aws:sqs:us-east-1:842676019507:customers2\u0022,\u0022Condition\u0022:{\u0022ArnEquals\u0022:{\u0022aws:SourceArn\u0022:\u0022arn:aws:sns:us-east-1:842676019507:customers\u0022}}}]}",
+      "ReceiveMessageWaitTimeSeconds": "0",
+      "SqsManagedSseEnabled": "true"
+    }
+  }
+]

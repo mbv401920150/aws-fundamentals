@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "427cc757-9fc2-4829-97f7-c402ee230999",
+		"name": "AWS Fundamentals",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8156578"
+	},
+	"item": [
+		{
+			"name": "Customer API",
+			"item": [
+				{
+					"name": "Customer Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"Michael Bolanos\",\r\n    \"email\": \"mibol@gmail.com\",\r\n    \"gitHubUserName\": \"mibol\",\r\n    \"dateOfBirth\": \"1986-08-30T23:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/customers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"update name\",\r\n    \"email\": \"updated@gmail.com\",\r\n    \"gitHubUserName\": \"mibol\",\r\n    \"dateOfBirth\": \"2000-08-30T23:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/customers/14b8bba1-472a-4eaf-8847-7f00680ccc19",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"customers",
+								"14b8bba1-472a-4eaf-8847-7f00680ccc19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/customers/f36fca7c-032c-4ce3-aa4b-c20f6bc9c84f",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"customers",
+								"f36fca7c-032c-4ce3-aa4b-c20f6bc9c84f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/customers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DynamoDb",
+			"item": [
+				{
+					"name": "Customer Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"Michael Bolanos\",\r\n    \"email\": \"mibol@gmail.com\",\r\n    \"gitHubUserName\": \"mibol\",\r\n    \"dateOfBirth\": \"1986-08-30T23:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/customers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"update name\",\r\n    \"email\": \"updated@gmail.com\",\r\n    \"gitHubUserName\": \"mibol\",\r\n    \"dateOfBirth\": \"2000-08-30T23:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/customers/14b8bba1-472a-4eaf-8847-7f00680ccc19",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"customers",
+								"14b8bba1-472a-4eaf-8847-7f00680ccc19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/customers/f36fca7c-032c-4ce3-aa4b-c20f6bc9c84f",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"customers",
+								"f36fca7c-032c-4ce3-aa4b-c20f6bc9c84f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/customers/4cd98b15-4689-4fb1-8dd4-200d1111f0e5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"customers",
+								"4cd98b15-4689-4fb1-8dd4-200d1111f0e5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/customers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "S3",
+			"item": [
+				{
+					"name": "Post image into S3 (Based on Customer Guid)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Data",
+									"type": "file",
+									"src": "/C:/Users/mbolanos/Downloads/images.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:5001/customers/14b8bba1-472a-4eaf-8847-7f00680ccc19/image",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"customers",
+								"14b8bba1-472a-4eaf-8847-7f00680ccc19",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get image from S3 (Based on Customer Guid)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/customers/14b8bba1-472a-4eaf-8847-7f00680ccc19/image",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"customers",
+								"14b8bba1-472a-4eaf-8847-7f00680ccc19",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete image from S3 (Based on Customer Guid)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/customers/14b8bba1-472a-4eaf-8847-7f00680ccc19/image",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"customers",
+								"14b8bba1-472a-4eaf-8847-7f00680ccc19",
+								"image"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Secret Manager - Weather API",
+			"item": [
+				{
+					"name": "Get Weather by city",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/weather/Lisbon",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"weather",
+								"Lisbon"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lambda",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ukau5iysz7rdau42lylmipvcwu0rvcrs.lambda-url.us-east-1.on.aws/",
+							"protocol": "https",
+							"host": [
+								"ukau5iysz7rdau42lylmipvcwu0rvcrs",
+								"lambda-url",
+								"us-east-1",
+								"on",
+								"aws"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
